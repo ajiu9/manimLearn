@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/wulongbiao/Documents/Code/github.com/ajiu9/manimLearn/media/videos/demo/1080p60/partial_movie_files/Try/3977891868_2203322596_223132457.mp4'
+file 'file:/Users/wulongbiao/Documents/Code/github.com/ajiu9/manimLearn/media/videos/demo/1080p60/partial_movie_files/Try/2852726489_1704852926_3730347147.mp4'
+file 'file:/Users/wulongbiao/Documents/Code/github.com/ajiu9/manimLearn/media/videos/demo/1080p60/partial_movie_files/Try/2852726489_4268274484_1407115060.mp4'
+file 'file:/Users/wulongbiao/Documents/Code/github.com/ajiu9/manimLearn/media/videos/demo/1080p60/partial_movie_files/Try/2852726489_1704852926_2549272915.mp4'
+file 'file:/Users/wulongbiao/Documents/Code/github.com/ajiu9/manimLearn/media/videos/demo/1080p60/partial_movie_files/Try/2852726489_1158961094_3376503906.mp4'
+file 'file:/Users/wulongbiao/Documents/Code/github.com/ajiu9/manimLearn/media/videos/demo/1080p60/partial_movie_files/Try/2852726489_1704852926_3632999845.mp4'
