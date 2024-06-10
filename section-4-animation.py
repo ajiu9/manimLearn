@@ -15,5 +15,18 @@ class BasicAnimation(Scene):
             Rotate(polys[4], PI, rate_func=lambda t: 1 - abs(1- 2*t)),
            run_time=2
         )
+        self.wait()
 
+class ConflictingAnimation(Scene):
+    def construct(self):
+        s = Square(color=RED, fill_opacity=0.5)
+        self.play(Rotate(s,PI), Rotate(s,-PI), run_time=3)
+        self.wait()
+
+class LaggingAnimation(Scene):
+    def construct(self):
+        squares = VGroup(
+            *[Square(color=Color(hue=j/20, saturation=0.5, luminance=0.5), fill_opacity=0.5) for j in range(20)]
+        ).arrange_in_grid(4,5).scale(0.75)
+        self.play(AnimationGroup(*[FadeIn(s) for s in squares], lag_ratio=0.25, run_time=2))
 
