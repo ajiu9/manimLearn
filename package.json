@@ -1,0 +1,37 @@
+{
+  "name": "manim-learn",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "ma learn code",
+  "author": "ajiu9",
+  "license": "ISC",
+  "homepage": "https://github.com/ajiu9/manimLearn#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajiu9/manimLearn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ajiu9/manimLearn/issues"
+  },
+  "keywords": [
+    "manimLearn"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.21.0",
+    "eslint": "^9.4.0",
+    "eslint-plugin-format": "^0.1.1",
+    "lint-staged": "^15.2.5",
+    "simple-git-hooks": "^2.11.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
