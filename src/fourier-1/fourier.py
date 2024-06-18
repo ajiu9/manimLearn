@@ -5,7 +5,7 @@ import operator as op
 
 # import scipy
 
-
+config.background_color = WHITE
 class FourierCirclesScene(Scene):
     CONFIG = {
         "n_vectors": 10,
@@ -25,6 +25,7 @@ class FourierCirclesScene(Scene):
             "tip_length": 0.15,
             "max_stroke_width_to_length_ratio": 10,
             "stroke_width": 2,
+            "color": ManimColor("#F1F3F8")
         },
         "circle_config": {
             "stroke_width": 1,
@@ -33,8 +34,8 @@ class FourierCirclesScene(Scene):
         "slow_factor": 0.25,
         "center_point": ORIGIN,
         "parametric_function_step_size": 0.001,
-        "drawn_path_color": YELLOW,
-        "drawn_path_stroke_width": 2,
+        "drawn_path_color": RED,
+        "drawn_path_stroke_width": 4,
     }
 
     def setup(self):
@@ -353,11 +354,11 @@ class FourierOfPiSymbol(FourierCirclesScene):
 
 class CustomFourierScene(FourierOfPiSymbol):
     CONFIG = {
-        "n_vectors": 20,
+        "n_vectors": 100,
         "run_time": 10,
         "start_drawn": True,
         "file_name": "drawing.svg",
-        "height": 7.5,
+        "height": 5.5,
     }
 
     def get_shape(self):
@@ -375,9 +376,9 @@ class CustomFourierScene(FourierOfPiSymbol):
         path.set_stroke(WHITE, 0)
         return path
 
-import os ; import sys
-from pathlib import Path
-if __name__ == "__main__":
-    project_path = Path(sys.path[1]).parent
-    script_name = f"{Path(__file__).resolve()}"
-    os.system(f"manim   --custom_folders  --disable_caching  -l -p  -c 'BLACK' --config_file '{project_path}/manim_settings.cfg' " + script_name + " CustomFourierScene")
+# import os ; import sys
+# from pathlib import Path
+# if __name__ == "__main__":
+#     project_path = Path(sys.path[1]).parent
+#     script_name = f"{Path(__file__).resolve()}"
+#     os.system(f"manim   --custom_folders  --disable_caching  -l -p  -c 'BLACK' --config_file '{project_path}/manim_settings.cfg' " + script_name + " CustomFourierScene")

@@ -3,7 +3,7 @@ from manim import *
 from pathlib import Path
 script_dir = Path(__file__).parent
 
-
+config.background_color = WHITE
 class ComplexFourierSeriesExample(FourierOfTrebleClef):
     CONFIG = {
         "file_name": "LOVE.svg",
